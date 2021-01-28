@@ -1,0 +1,167 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(20deg, rgba(0, 0, 0, 0.158), rgba(10, 28, 61, 0.425)), url(/img/gamer.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  background-color: #1f282e;
+}
+
+#btn-mas {
+  display: none;
+}
+
+.app {
+  position: fixed;
+  bottom: 80px;
+  left: 20px;
+  padding-left: 10px;
+}
+
+.redes a {
+  display: block;
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 1px 10px black;
+          box-shadow: 0px 1px 10px black;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  font-size: 25px;
+  margin-bottom: -15px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.fa-facebook-f {
+  background: #074783;
+  color: white;
+}
+
+.fa-facebook-f:hover {
+  background: rgba(255, 255, 255, 0.815);
+  color: #074783;
+}
+
+.fa-youtube {
+  color: #fff;
+  background: red;
+}
+
+.fa-youtube:hover {
+  background: #fff;
+  color: red;
+}
+
+.fa-whatsapp {
+  color: white;
+  background: #0bb127;
+}
+
+.fa-whatsapp:hover {
+  color: #05ff05;
+  background: rgba(255, 255, 255, 0.945);
+}
+
+.fa-twitter {
+  background-color: #2c90f3;
+  color: white;
+}
+
+.fa-twitter:hover {
+  background: rgba(255, 255, 255, 0.945);
+  color: #2c72f3;
+}
+
+.fa-github {
+  background: rgba(0, 0, 0, 0.925);
+  color: white;
+}
+
+.fa-github:hover {
+  background: white;
+  color: rgba(0, 0, 0, 0.925);
+}
+
+.fa-telegram-plane {
+  background: #0066ff;
+  color: white;
+}
+
+.fa-telegram-plane:hover {
+  background: rgba(255, 255, 255, 0.815);
+  color: #0066ff;
+}
+
+#btn-mas:checked ~ .redes a {
+  margin-bottom: 10px;
+  opacity: 1;
+  visibility: visible;
+}
+
+#btn-mas:checked ~ .btn-mas .fa-plus {
+  -webkit-transform: rotate(137deg);
+          transform: rotate(137deg);
+  font-size: 23px;
+}
+
+.fa-plus {
+  padding-top: 15px;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  background: #f31182;
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 1px 10px black;
+          box-shadow: 0px 1px 10px black;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  font-size: 20px;
+}
+
+.fa-plus:hover {
+  background: #0066ff;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+/*  footer*/
+footer {
+  padding-bottom: 15px;
+  background: #2e383f;
+  bottom: 0%;
+  width: 100%;
+  position: absolute;
+}
+
+footer .container {
+  color: #ffff;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer .container strong {
+  color: red;
+}
+/*# sourceMappingURL=style.css.map */

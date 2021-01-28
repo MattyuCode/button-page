@@ -1,0 +1,168 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background:
+        linear-gradient(20deg,
+            rgba(0, 0, 0, 0.158),
+            rgba(10, 28, 61, 0.425)),
+        url(/img/gamer.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    background-color: #1f282e;
+}
+
+//Redes------------------------
+
+#btn-mas {
+    display: none;
+}
+
+.app {
+    position: fixed;
+    bottom: 80px;
+    left: 20px;
+    padding-left: 10px;
+}
+
+.redes a {
+    display: block;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgb(0, 0, 0);
+    transition: all 500ms ease;
+    font-size: 25px;
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.fa-facebook-f {
+    background: hsl(209deg, 90%, 27%);
+    color: rgb(255, 255, 255);
+}
+
+.fa-facebook-f:hover {
+    background: rgba(255, 255, 255, 0.815);
+    color: hsl(209deg, 90%, 27%);
+}
+
+.fa-youtube {
+    color: #fff;
+    background: red;
+}
+
+.fa-youtube:hover {
+    background: #fff;
+    color: red;
+}
+
+.fa-whatsapp {
+    color: rgb(255, 255, 255);
+    background: hsl(130deg, 88%, 37%);
+}
+
+.fa-whatsapp:hover {
+    color: rgb(5, 480, 5);
+    background: rgba(255, 255, 255, 0.945);
+}
+
+.fa-twitter {
+    background-color: rgb(44, 144, 243);
+    color: rgb(255, 255, 255);
+}
+
+.fa-twitter:hover {
+    background: rgba(255, 255, 255, 0.945);
+    color: rgb(44, 114, 243);
+}
+
+.fa-github {
+    background: rgba(0, 0, 0, 0.925);
+    color: rgb(255, 255, 255);
+}
+
+.fa-github:hover {
+    background: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0.925);
+
+}
+
+.fa-telegram-plane {
+    background: rgb(0, 102, 255);
+    color: rgb(255, 255, 255);
+}
+
+.fa-telegram-plane:hover {
+    background: rgba(255, 255, 255, 0.815);
+    color: rgb(0, 102, 255);
+}
+
+#btn-mas:checked~.redes a {
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+
+#btn-mas:checked~.btn-mas .fa-plus {
+    transform: rotate(137deg);
+    font-size: 23px;
+}
+
+
+.fa-plus {
+    padding-top: 15px;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    background: #f31182;
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgb(0, 0, 0);
+    transition: all 500ms ease;
+    font-size: 20px;
+}
+
+.fa-plus:hover {
+    background: rgb(0, 102, 255);
+    transform: scale(0.9);
+}
+
+/*  footer*/
+
+footer {
+    padding-bottom: 15px;
+    background: #2e383f;
+    bottom: 0%;
+    width: 100%;
+    position: absolute;
+
+    .container {
+        color: #ffff;
+        padding-top: 20px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 300;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        strong {
+            color: red;
+        }
+    }
+}
